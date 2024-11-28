@@ -1,0 +1,16 @@
+
+CREATE DATABASE IF NOT EXISTS gestor_contrasena;
+USE gestor_contrasena;
+CREATE TABLE IF NOT EXISTS `baul` (
+    `id_baul` INT NOT NULL AUTO_INCREMENT,
+    `Plataforma` VARCHAR(80) NOT NULL,
+    `usuario` VARCHAR(80) NOT NULL,
+    `clave` VARCHAR(80) NOT NULL,
+    PRIMARY KEY (`id_baul`),
+    UNIQUE KEY `Plataforma_usuario` (`Plataforma`, `usuario`)
+);
+INSERT INTO baul (Plataforma, usuario, clave) 
+VALUES 
+('Facebook', 'juanperez', 'miClave123'),
+('Instagram', 'ana_lopez', 'clave456'),
+('Twitter', 'pedro_23', 'clave789');

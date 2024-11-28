@@ -1,0 +1,145 @@
+/* Configuración global de la página */
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7; /* Fondo más suave */
+  color: #333; /* Texto oscuro para mayor legibilidad */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Para un mejor control de los márgenes y el padding */
+}
+
+/* Estilo principal del contenedor */
+#main {
+  max-width: 1200px;
+  margin: 40px auto; /* Mayor espaciado alrededor */
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
+}
+
+/* Estilo del contenedor 'marco' */
+#marco {
+  border-radius: 12px;
+  border: 2px solid #4A6F80; /* Color más suave para el borde */
+  background-color: #D3E0E9; /* Color más claro */
+  padding: 20px;
+  width: 100%;
+  margin: 30px 0; /* Más espacio alrededor */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#marco:hover {
+  transform: translateY(-8px); /* Efecto de elevación más notable */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sombra más fuerte al hacer hover */
+}
+
+/* Estilo para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.table th, .table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.table th {
+  background-color: #F1F1F1;
+  font-weight: bold;
+  color: #555;
+}
+
+.table tr:hover {
+  background-color: #F7F7F7; /* Fondo sutil al pasar el mouse */
+}
+
+/* Estilo para la tarjeta */
+.targeta {
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.targeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para las etiquetas */
+label {
+  font-weight: 600;
+  padding: 8px;
+  font-size: 17px;
+  color: #444;
+}
+
+/* Estilo para el título 'h1' */
+h1.rr {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+  color: #2A4D3A; /* Verde más profundo */
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: color 0.3s ease;
+}
+
+h1.rr:hover {
+  color: #4B9F8C; /* Color que resalta al pasar el mouse */
+}
+
+/* Estilo de las etiquetas de formularios */
+input, textarea, select {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fdfdfd;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #61A1C7; /* Borde azul claro */
+  background-color: #fafafa; /* Fondo suave */
+  outline: none;
+}
+
+/* Estilo para los botones */
+button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Efecto de escala suave */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Agregar un estilo de transición más suave en general */
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
